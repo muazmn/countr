@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Timezone App</title>
+    <!-- Google Fonts -->
+    <!-- CSS only -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet" />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="scss/style.css" />
+    <!-- <link rel="stylesheet" src="styless.scss" /> -->
+    <!-- <link rel="stylesheet" src="style.css.map" /> -->
+</head>
+
+<body>
+    <div class="parallax">
+        <nav class="navigationWrapper">
+            <div class="logoWrapper">
+                <span class="stylish">COUNTRY</span>
+                <span class="logo">APP</span>
+                <span class="home"><a class="link" href="#Weather">Home</a></span>
+            </div>
+            <ul class="navigation">
+                <input type="checkbox" id="checkbox_toggle" />
+                <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+                <div class="menu">
+                    <!-- <li class="parent dropdown" id="dropdown">
+                        <a class="link dropbtn" href="#">Language</a>
+                        <div class="dropdown-content">
+                            <label for="af" class="language">Afrikaans<input type="hidden" id="af" value="af"></label>
+                            <label for="al" class="language">Albanian<input type="hidden" id="al" value="al"></label>
+                            <label for="ar" class="language">Arabic<input type="hidden" id="ar" value="ar"></label>
+                            <label for="az" class="language">Azerbaijani<input type="hidden" id="az" value="az"></label>
+                            <label for="bg" class="language">bulgarian<input type="hidden" id="bg" value="bg"></label>
+                            <label for="ca" class="language">Catalan<input type="hidden" id="ca" value="ca"></label>
+                            <label for="cz" class="language">Czech<input type="hidden" id="cz" value="cz"></label>
+                            <label for="da" class="language">Danish<input type="hidden" id="da" value="da"></label>
+                            <label for="de" class="language">German<input type="hidden" id="de" value="de"></label>
+                            <label for="el" class="language">Greek<input type="hidden" id="el" value="el"></label>
+                            <label for="en" class="language">English<input type="hidden" id="en" value="en"></label>
+                            <label for="eu" class="language">Basque<input type="hidden" id="eu" value="eu"></label>
+                            <label for="fa" class="language">Persian(farsi)<input type="hidden" id="fa"
+                                    value="fa"></label>
+                            <label for="fi" class="language">Finnish<input type="hidden" id="fi" value="fi"></label>
+                            <label for="fr" class="language">French<input type="hidden" id="fr" value="fr"></label>
+                            <label for="gl" class="language">Galician<input type="hidden" id="gl" value="gl"></label>
+                            <label for="he" class="language">Hebrew<input type="hidden" id="he" value="he"></label>
+                            <label for="hi" class="language">Hindi<input type="hidden" id="hi" value="hi"></label>
+                            <label for="hr" class="language">Croatian<input type="hidden" id="hr" value="hr"></label>
+                            <label for="hu" class="language">Hungarian<input type="hidden" id="hu" value="hu"></label>
+                            <label for="id" class="language">Indonesia<input type="hidden" id="id" value="id"></label>
+                            <label for="it" class="language">Italian<input type="hidden" id="it" value="it"></label>
+                            <label for="ja" class="language">Japanese<input type="hidden" id="ja" value="ja"></label>
+                            <label for="kr" class="language">Korean<input type="hidden" id="kr" value="kr"></label>
+                            <label for="la" class="language">Latvian<input type="hidden" id="la" value="la"></label>
+                            <label for="lt" class="language">Lithuanian<input type="hidden" id="lt" value="lt"></label>
+                            <label for="mk" class="language">Macedonian<input type="hidden" id="mk" value="mk"></label>
+                            <label for="no" class="language">Norwegian<input type="hidden" id="no" value="no"></label>
+                            <label for="nl" class="language">Dutch<input type="hidden" id="nl" value="nl"></label>
+                            <label for="pl" class="language">Polish<input type="hidden" id="pl" value="pl"></label>
+                            <label for="pt" class="language">portugese<input type="hidden" id="pt" value="pt"></label>
+                            <label for="pt_br" class="language">portugese Brasil<input type="hidden" id="pt_br"
+                                    value="pt_br"></label>
+                            <label for="ro" class="language">Romanian<input type="hidden" id="ro" value="ro"></label>
+                            <label for="ru" class="language">Russian<input type="hidden" id="ru" value="ru"></label>
+                            <label for="sv" class="language">Swedish<input type="hidden" id="sv" value="sv"></label>
+                            <label for="sk" class="language">Slovak<input type="hidden" id="sk" value="sk"></label>
+                            <label for="sl" class="language">Slovenian<input type="hidden" id="sl" value="sl"></label>
+                            <label for="sp" class="language">Spanian<input type="hidden" id="sp" value="sp"></label>
+                            <label for="sr" class="language">Serbian<input type="hidden" id="sr" value="sr"></label>
+                            <label for="th" class="language">Thai<input type="hidden" id="th" value="th"></label>
+                            <label for="tr" class="language">Turkish<input type="hidden" id="tr" value="tr"></label>
+                            <label for="ua" class="language">Ukranian<input type="hidden" id="ua" value="ua"></label>
+                            <label for="vi" class="language">Vietnamese<input type="hidden" id="vi" value="vi"></label>
+                            <label for="zh_cn" class="language">Chinese Simplified<input type="hidden" id="zh_cn"
+                                    value="zh_cn"></label>
+                            <label for="zh_tw" class="language">Chinese Traditional<input type="hidden" id="zh_tw"
+                                    value="zh_tw"></label>
+                            <label for="zu" class="language">Zulu<input type="hidden" id="zu" value="zu"></label>
+                        </div>
+                    </li> -->
+                    <li class="parent"><a class="link" href="#Weather">Weather</a></li>
+                    <li class="parent"><a class="link" href="#Contact">Contact</a></li>
+                    <li class="parent"><a class="link" href="#Info">Info</a></li>
+                </div>
+            </ul>
+        </nav>
+        <!-- </div> -->
+        <div class="parallax">
+            <div class="container wrapper" id="Weather">
+                <h1>Weather</h1>
+
+                <!-- <div class="container"> -->
+                <div class="search-container">
+                    <input type="text" placeholder="Enter a city name" id="city" value="kuala lumpu" />
+                    <button id="search-btn">Search</button>
+                </div>
+                <div id="result"></div>
+                <!-- </div> -->
+            </div>
+        </div>
+        <div class="container wrapper wrapper2" id="Info">
+            <h1>Country Info</h1>
+            <!-- <div class="container"> -->
+            <div class="search-container">
+                <input type="text" placeholder="Enter a city name" id="city2" value="malaysia" />
+                <button id="search-btn2">Search</button>
+            </div>
+            <div id="result2"></div>
+            <!-- </div> -->
+        </div>
+    </div>
+    <!-- <div class="container2">
+        <div class="search-wrapper">
+            <input type="text" id="country-inp" placeholder="Enter a country name here..." />
+            <button id="search-btn2">Search</button>
+        </div>
+        <div id="result2"></div>
+    </div> -->
+    <!-- <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa optio expedita a! Soluta ex eaque fuga magnam
+        nesciunt, facilis ad dolore ratione sed suscipit consequuntur distinctio minus minima reiciendis eligendi,
+        natus
+            neque dolorem ipsam. Ullam fugiat reprehenderit, ut voluptas earum beatae quibusdam facere tempora quos,
+            dolores
+            molestias, accusantium repellat nobis!</h1> -->
+    <!-- Script -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+    <script src="key.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,9 @@
+1 . navbar
+* buat tulisan weather, contact, language dan buat dropdown nya sekali
+* buat <!DOCTYPE html>
+2 . language
+  . tangkap data language yg ada dalam api dgn ajax lalu pindahkan dalam elem html
+  . 
+  . ambil lang yang ada dlm html dgn js dom yaitu getElemntsByClassName
+
+4
